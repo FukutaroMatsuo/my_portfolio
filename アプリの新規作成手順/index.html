@@ -1,0 +1,504 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ポートフォリオ & アウトプット">
+      
+      
+      
+      
+        <meta name="author" content="Fukutaro matsuo">
+      
+      <link rel="shortcut icon" href="../img/">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>アプリの新規作成手順 - ポートフォリオ & アウトプット</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7CInconsolata&display=fallback">
+        <style>body,input{font-family:"Noto Sans",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Inconsolata",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rails" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="ポートフォリオ &amp; アウトプット" class="md-header-nav__button md-logo" aria-label="ポートフォリオ & アウトプット">
+      
+  <img src="../img/" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            ポートフォリオ & アウトプット
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              アプリの新規作成手順
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ポートフォリオ &amp; アウトプット" class="md-nav__button md-logo" aria-label="ポートフォリオ & アウトプット">
+      
+  <img src="../img/" alt="logo">
+
+    </a>
+    ポートフォリオ & アウトプット
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      自己紹介
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      技術メモ
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="技術メモ" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        技術メモ
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" >
+    <label class="md-nav__link" for="nav-2-1">
+      環境構築
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="環境構築" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        環境構築
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docker_rails_postgres/" class="md-nav__link">
+      Docker + Rails + Postgres
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docker_rails_nuxt_mysql/" class="md-nav__link">
+      Docker + Rails-api + Nuxt.js + Mysql
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../migration/" class="md-nav__link">
+      マイグレーション
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../devise%E9%96%A2%E9%80%A3/" class="md-nav__link">
+      Devise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../convenient_command/" class="md-nav__link">
+      便利コマンド
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      エラー解決
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="エラー解決" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        エラー解決
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-nav__link">
+      開発環境と本番環境でのdb:resetとdb:migrate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docker-compose%2Bmysql%E3%81%A7%E3%81%AE%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E5%85%A5%E5%8A%9B%E6%99%82%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC/" class="md-nav__link">
+      docker-compose + MySQL でのパスワード入力時のエラー
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rails" class="md-nav__link">
+    システム全体にRailsをインストールする方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rails_1" class="md-nav__link">
+    個別のディレクトリにRailsをインストールする方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heroku" class="md-nav__link">
+    Herokuへのデプロイ手順
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>アプリの新規作成手順</h1>
+                
+                <h3 id="rails">システム全体にRailsをインストールする方法<a class="headerlink" href="#rails" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>cd ~/environment/</code> # 全体のフォルダに移動</li>
+<li><code>gem install rails</code> # <code>-v 5.2.2</code>などバージョン指定も可</li>
+<li><code>rails _5.2.2_ new アプリ名 --database=mysql --skip-test</code>  </li>
+<li><code>sudo service mysqld start</code>起動させ、<code>rails db:create</code>とする  </li>
+<li><code>rails s</code>でサーバーに接続できる</li>
+</ol>
+<h3 id="rails_1">個別のディレクトリにRailsをインストールする方法<a class="headerlink" href="#rails_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>cd ~/environment/</code></li>
+<li><code>mkdir アプリ名</code>  </li>
+<li><code>cd アプリ名</code></li>
+<li><code>bundle init</code> # gemfileが作成される</li>
+<li>作成されたgemfileの、<code>gem "rails"</code>部分のコメントを外す</li>
+<li><code>bundle install --path vendor/bundle</code> # --path以下は初回のみ  </li>
+<li><code>bundle exec rails new . -d mysql --skip-turbolinks --skip-test</code> # bundleインストールはここで実行</li>
+<li>gemfileをインストールして良いか聞かれたら、yを押下</li>
+<li>ディレクトリ内に、<code>.gitignore</code>の作成を行う  # <a href="https://www.gitignore.io/">gitignore</a></li>
+<li>githubにアプリ名の新規リポジトリを作成し、<code>git remote add</code>以下をコピーしターミナルへ</li>
+<li><code>git init</code> <code>git add .</code> <code>git commit -m ""</code> <code>git push -u origin master</code>  </li>
+</ol>
+<h3 id="heroku">Herokuへのデプロイ手順<a class="headerlink" href="#heroku" title="Permanent link">&para;</a></h3>
+<ul>
+<li>トップページをrootに登録する  </li>
+<li>gemfile内に<code>sqlite3</code>が記述されている場合はコメントアウト  </li>
+<li>gemfileの中に、<code>gem mysql</code>と記述されている場合は問題なし</li>
+<li>gemfileの一番下に以下を記述
+<div class="highlight"><pre><span></span><code><span class="n">group</span> <span class="ss">:production</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">&#39;pg&#39;</span>
+<span class="k">end</span>
+</code></pre></div></li>
+<li><code>bundle install --without production</code>を行う</li>
+<li>HerokuをCloud9のターミナルからインストールするツールのインストール  </li>
+<li><code>wget https://cli-assets.heroku.com/heroku-linux-x64.tar.gz -O heroku.tar.gz</code>  </li>
+<li><code>sudo mkdir -p /usr/local/lib/heroku</code></li>
+<li><code>sudo tar --strip-components 1 -zxvf heroku.tar.gz -C /usr/local/lib/heroku</code></li>
+<li><code>sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku</code></li>
+<li><code>heroku login -i</code>  Herokuへのログイン</li>
+<li>アプリのディレクトリに移動できているか確認</li>
+<li><code>heroku create アプリ名</code></li>
+<li><code>heroku apps</code> # 念の為、作成されたか確認する</li>
+<li>database.ymlのproduction:以下に下記のように記述<br />
+<div class="highlight"><pre><span></span><code><span class="ss">production</span><span class="p">:</span>
+  <span class="ss">adapter</span><span class="p">:</span> <span class="n">postgresql</span>
+  <span class="ss">encoding</span><span class="p">:</span> <span class="n">unicode</span>
+  <span class="ss">pool</span><span class="p">:</span> <span class="mi">5</span>
+  <span class="ss">database</span><span class="p">:</span> <span class="err">アプリ名</span><span class="n">_production</span>
+  <span class="ss">username</span><span class="p">:</span> <span class="err">アプリ名</span>
+  <span class="ss">password</span><span class="p">:</span> <span class="o">&lt;%=</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;大文字アプリ名_DATABASE_PASSWORD&#39;</span><span class="o">]</span> <span class="o">%&gt;</span>
+</code></pre></div></li>
+<li><code>git add .</code> <code>git commit -m ""</code>　# コミット必須</li>
+<li><code>git push heroku master</code> # やや待つ</li>
+<li>HerokuアプリのURLにアクセスするが、ここではエラー</li>
+<li><code>heroku run rails db:migrate</code>を行う</li>
+<li>以上で恐らくできる  </li>
+<li>一応、modelやcontrollerでダブルクォーテーションを使うとcolumnとして認識されるので、シングルへ変更する</li>
+</ul>
+<p><a href="https://techacademy.jp/my/rails/rails5-2/heroku#chapter-5">TechAcademy Heroku</a><br />
+<a href="https://qiita.com/kazukimatsumoto/items/a0daa7281a3948701c39">railsアプリをherokuを使って確実にデプロイする方法</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy 2020 Fukutaro matsuo
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
