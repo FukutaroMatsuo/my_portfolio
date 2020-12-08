@@ -1,7 +1,9 @@
-<div align="center">
+<!-- <div align="center"> -->
   <img src="img/myphoto.jpg">
-</div>
+<!-- </div> -->
 
-### 自己紹介
-1. 年齢 | 27歳
-2. 性別 | 男性
+## 基本情報
+- 名前 / 松尾
+- 年齢 / 27歳
+- 性別 / 男性
+-  

@@ -1,16 +1,13 @@
 site_name: ポートフォリオ & アウトプット
 site_description: ポートフォリオ & アウトプット
 site_author: Fukutaro matsuo
-site_url:
-repo_name:
-repo_url:
 copyright: Copyright &copy 2020 Fukutaro matsuo
 
 theme:
   name: material
   language: ja
-  logo: img/
-  favicon: img/
+  logo: img/icon.png
+  favicon: img/icon.png
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -52,7 +49,7 @@ extra:
     language: "jp"
 
 nav:
-  - 自己紹介: index.md
+  - 自己紹介ページ: index.md
   - 技術メモ:
       - 環境構築:
           - Docker + Rails + Postgres: docker_rails_postgres.md
