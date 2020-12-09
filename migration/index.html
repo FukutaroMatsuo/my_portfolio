@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -141,6 +139,60 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +222,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -237,6 +289,18 @@
   <li class="md-nav__item">
     <a href="../docker_rails_nuxt_mysql/" class="md-nav__link">
       Docker + Rails-api + Nuxt.js + Mysql
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
     </a>
   </li>
 
@@ -338,7 +402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -488,25 +552,27 @@
 <p>Add 以下はキャメルケースで記載</p>
 </li>
 <li>カラム名のところは何を書いてもいいが、追加したいカラム名の複数形に統一しておく</li>
-<li>テーブル名にはカラムを追加するテーブル名の**複数形**を書く</li>
-<li><code>@@@</code>はカラム名を**単数形**で記入</li>
+<li>テーブル名にはカラムを追加するテーブル名の<strong>複数形</strong>を書く</li>
+<li><code>@@@</code>はカラム名を<strong>単数形</strong>で記入</li>
 </ol>
 <p>以下は user テーブルにふりがなを追加したときの例。</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">AddKanaToUser</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">AddKanaToUser</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
   <span class="k">def</span> <span class="nf">change</span>
     <span class="n">add_column</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:kana</span><span class="p">,</span> <span class="ss">:string</span>
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+
 <h2 id="_3">カラム型の変更<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><code>rails g migration change_data_&lt;カラム名&gt;_to_&lt;テーブル名の複数形&gt;</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ChangeColumnToUsers</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">ChangeColumnToUsers</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
   <span class="k">def</span> <span class="nf">change</span>
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+
 <p>上記のように空の migration ファイルが作成されるので、下記のように編集</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ChangeColumnToUser</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">ChangeColumnToUser</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
   <span class="k">def</span> <span class="nf">up</span>
     <span class="n">change_column</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:detail</span><span class="p">,</span> <span class="ss">:text</span>
   <span class="k">end</span>
@@ -516,9 +582,10 @@
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+
 <h2 id="_4">注意点<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>**カラムの追加**と**カラム型の変更**では、方法がやや異なっていて、migration ファイルを触る時は、追加(up)するだけでなく、削除(down)するときのことも考えなければならない。<br />
-つまり、**カラムの追加**では、change で書いても rollback 時など down する際にもよしなにしてくれるが、**カラム型の変更**で change を使ってしまうと、up 時は良くても、down 時に rollback できないというようなことが起こってしまう。ということ。<br />
+<p><strong>カラムの追加</strong>と<strong>カラム型の変更</strong>では、方法がやや異なっていて、migration ファイルを触る時は、追加(up)するだけでなく、削除(down)するときのことも考えなければならない。<br />
+つまり、<strong>カラムの追加</strong>では、change で書いても rollback 時など down する際にもよしなにしてくれるが、<strong>カラム型の変更</strong>で change を使ってしまうと、up 時は良くても、down 時に rollback できないというようなことが起こってしまう。ということ。<br />
 簡単なことだが、ここを理解したときに、migration ファイルに対する怖さが一気に消えた。</p>
 <h2 id="_5">おまけ<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>これからは上記の様に書くとして、これまでに書いてしまった箇所を rollback するさいはどうすればいいのか...<br />
@@ -542,7 +609,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../docker_rails_nuxt_mysql/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -551,7 +618,7 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Docker + Rails-api + Nuxt.js + Mysql
+                MkDocs(Docker + docker-compose)
               </div>
             </div>
           </a>
@@ -600,7 +667,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

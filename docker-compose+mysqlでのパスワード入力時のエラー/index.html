@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -141,6 +139,62 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link md-tabs__link--active">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +224,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -239,6 +293,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -274,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -434,9 +500,10 @@
 ログインができないエラーに遭遇したので、私が解決できた方法を記載しておきます！</p>
 <h3 id="_1">解決法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>私の場合は、docker-compose.ymlで </p>
-<p><div class="highlight"><pre><span></span><code>db-data:/var/lib/mysql:cached
+<div class="codehilite"><pre><span></span><code>db-data:/var/lib/mysql:cached
 </code></pre></div>
-このようにしてdbデータをローカルに保存してマウントしていたのですが、
+
+<p>このようにしてdbデータをローカルに保存してマウントしていたのですが、
 ここに試しに作っていた、いくつかのvolumeが残っていたため、
 そちらの環境変数が優先され、現在のパスワードが反映されていないという問題でした。</p>
 <p>MySQL公式に</p>
@@ -448,19 +515,21 @@
 <p>つまり、
 マウント先のローカルのdbを一旦削除して、再度作り直せばOKということです。</p>
 <h3 id="_2">手順<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>docker-compose down
+<div class="codehilite"><pre><span></span><code>docker-compose down
 docker volume ls
 docker volume rm (lsで表示されたvolume名をスペース区切りで並べる)
 docker-compose up
 </code></pre></div>
+
 <p>で、作り直して再度ログインすると、問題なくログインできました！！</p>
 <p>上記の手順で、
 <code>docker volume rm</code>時にもしかすると、削除できない場合があるかもしれません。
 その時は、</p>
-<p><div class="highlight"><pre><span></span><code>docker system prune
+<div class="codehilite"><pre><span></span><code>docker system prune
 docker volume rm ○○
 </code></pre></div>
-とするとうまくいくかも知れません！！</p>
+
+<p>とするとうまくいくかも知れません！！</p>
                 
               
               
@@ -523,7 +592,7 @@ docker volume rm ○○
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

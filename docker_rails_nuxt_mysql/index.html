@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -141,6 +139,62 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link md-tabs__link--active">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +224,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -252,6 +306,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -287,7 +353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -409,13 +475,13 @@
           </a>
         
         
-          <a href="../migration/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../mkdocs/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                マイグレーション
+                MkDocs(Docker + docker-compose)
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -452,7 +518,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

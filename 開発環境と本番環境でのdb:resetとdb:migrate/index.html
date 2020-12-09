@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -141,6 +139,62 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +224,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -239,6 +293,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -274,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -383,12 +449,13 @@
 <p>これもググった結果だが、migrationする順番の違いで、初めの操作はうまくいかなかったのかな？恐らく</p>
 <h1 id="_4">本番環境での解決<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
 <p><a href="https://qiita.com/G-awa/items/792b7cd60205823f7ac0">heroku上のDBをリセットする</a>を参考にして、</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">heroku</span> <span class="ss">pg</span><span class="p">:</span><span class="n">reset</span> <span class="no">DATABASE_URL</span>
+<div class="codehilite"><pre><span></span><code><span class="err">$</span> <span class="n">heroku</span> <span class="ss">pg</span><span class="p">:</span><span class="n">reset</span> <span class="no">DATABASE_URL</span>
 
 <span class="err">$</span> <span class="n">heroku</span> <span class="n">run</span> <span class="n">rails</span> <span class="ss">db</span><span class="p">:</span><span class="n">reset</span>
 
 <span class="err">$</span> <span class="n">heroku</span> <span class="n">run</span> <span class="n">rails</span> <span class="ss">db</span><span class="p">:</span><span class="n">migrate</span>
 </code></pre></div>
+
 <p>としたが、ここで何故かheroku上で同じエラーが出現。
 原因がわからず、heroku上でadminに入り、カラムを確認すると、以前と同じ状態。</p>
 <p>もう一度慎重に、上記を繰り返したが、それでもだめ...</p>
@@ -417,7 +484,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../convenient_command/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../linux_command/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -475,7 +542,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

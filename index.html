@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -96,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              自己紹介ページ
+              自己紹介
             
           </span>
         </div>
@@ -141,6 +139,60 @@
       
       
         
+          
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+      
+    
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="docker_rails_postgres/" class="md-tabs__link">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -176,12 +228,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        自己紹介ページ
+        自己紹介
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="." class="md-nav__link md-nav__link--active">
-      自己紹介ページ
+      自己紹介
     </a>
     
       
@@ -197,7 +249,7 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    基本情報
+     基本情報
   </a>
   
 </li>
@@ -273,6 +325,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -308,7 +372,7 @@
 
 
   <li class="md-nav__item">
-    <a href="convenient_command/" class="md-nav__link">
+    <a href="linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -391,7 +455,7 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    基本情報
+     基本情報
   </a>
   
 </li>
@@ -409,18 +473,14 @@
               
                 
                 
-                  <h1>自己紹介ページ</h1>
+                  <h1>自己紹介</h1>
                 
-                <!-- <div align="center"> -->
-<p><img src="img/myphoto.jpg"></p>
-<!-- </div> -->
-
-<h2 id="_1">基本情報<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+                <p><img src="img/myphoto.jpg"></p>
+<h2 id="_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2a10 10 0 0110 10m-2 0a8 8 0 00-8-8 8 8 0 00-8 8 8 8 0 008 8 8 8 0 008-8M8.6 16.6l4.6-4.6-4.6-4.6L10 6l6 6-6 6-1.4-1.4z"/></svg></span> 基本情報<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>名前 / 松尾</li>
 <li>年齢 / 27歳</li>
 <li>性別 / 男性</li>
-<li></li>
 </ul>
                 
               
@@ -484,7 +544,7 @@
       <script>
         app = initialize({
           base: ".",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
