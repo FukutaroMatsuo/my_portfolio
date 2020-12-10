@@ -18,7 +18,7 @@
     
     
       
-        <title>便利コマンド - ポートフォリオ & アウトプット</title>
+        <title>MkDocs(Docker + docker-compose) - ポートフォリオ & アウトプット</title>
       
     
     
@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#mkdocsdocker-docker-compose" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -96,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              便利コマンド
+              MkDocs(Docker + docker-compose)
             
           </span>
         </div>
@@ -141,6 +139,62 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link md-tabs__link--active">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +224,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -201,10 +255,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     <label class="md-nav__link" for="nav-2-1">
       環境構築
       <span class="md-nav__icon md-icon"></span>
@@ -241,6 +297,70 @@
   </li>
 
         
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MkDocs(Docker + docker-compose)
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      MkDocs(Docker + docker-compose)
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    サイト用のディレクトリを作成 &amp; 移動
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-composeyml" class="md-nav__link">
+    docker-compose.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    mkdocs.yml
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -274,20 +394,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
-    
   </li>
 
         
@@ -362,6 +473,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    サイト用のディレクトリを作成 &amp; 移動
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-composeyml" class="md-nav__link">
+    docker-compose.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    mkdocs.yml
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -373,7 +513,74 @@
               
                 
                 
-                <h1 id="_1">便利コマンド<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="mkdocsdocker-docker-compose">MkDocs(Docker + docker-compose)<a class="headerlink" href="#mkdocsdocker-docker-compose" title="Permanent link">&para;</a></h1>
+<h2 id="_1">サイト用のディレクトリを作成 &amp; 移動<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>$ mkdir docs <span class="o">&amp;&amp;</span> mkdir docs/img
+$ touch docker-compose.yml mkdocs.yml
+</code></pre></div>
+
+<h2 id="docker-composeyml">docker-compose.yml<a class="headerlink" href="#docker-composeyml" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&quot;3&quot;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+  <span class="nt">mkdocs</span><span class="p">:</span>
+    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">squidfunk/mkdocs-material</span>
+    <span class="nt">ports</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8000:8000</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.:/docs</span>
+</code></pre></div>
+
+<h2 id="mkdocsyml">mkdocs.yml<a class="headerlink" href="#mkdocsyml" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> 
+<span class="nt">site_description</span><span class="p">:</span> 
+<span class="nt">site_author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fukutaro matsuo</span>
+<span class="nt">copyright</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Copyright &amp;copy 2020 Fukutaro matsuo</span>
+
+<span class="nt">theme</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">material</span>
+  <span class="nt">features</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">navigation.tabs</span>
+  <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ja</span>
+  <span class="nt">logo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">img/</span>
+  <span class="nt">favicon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">img/</span>
+  <span class="nt">icon</span><span class="p">:</span>
+    <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/github</span>
+  <span class="nt">palette</span><span class="p">:</span>
+    <span class="nt">scheme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">slate</span>
+    <span class="nt">primary</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">indigo</span>
+    <span class="nt">accent</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">amber</span>
+  <span class="nt">font</span><span class="p">:</span>
+    <span class="nt">text</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Noto Sans</span>
+    <span class="nt">code</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Inconsolata</span>
+
+<span class="nt">markdown_extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
+  <span class="p p-Indicator">-</span> <span class="nt">codehilite</span><span class="p">:</span>
+      <span class="nt">guess_lang</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="p p-Indicator">-</span> <span class="nt">toc</span><span class="p">:</span>
+      <span class="nt">permalink</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">footnotes</span>
+  <span class="p p-Indicator">-</span> <span class="nt">pymdownx.emoji</span><span class="p">:</span>
+      <span class="nt">emoji_index</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.twemoji</span>
+      <span class="nt">emoji_generator</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.to_svg</span>
+
+<span class="nt">extra</span><span class="p">:</span>
+  <span class="nt">search</span><span class="p">:</span>
+    <span class="nt">language</span><span class="p">:</span> <span class="s">&quot;jp&quot;</span>
+
+<span class="nt">nav</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+</code></pre></div>
+
+<p>Build &amp; Up</p>
+<div class="codehilite"><pre><span></span><code>$ docker run --rm -it -v <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>:/docs squidfunk/mkdocs-material build
+$ docker-compose up
+</code></pre></div>
+
+<p><a href="localhost:8000">localhost:8000</a>にアクセス</p>
+<p>GitHub PagesへのDeploy</p>
+<div class="codehilite"><pre><span></span><code>$ docker run --rm -it -v ~/.ssh:/root/.ssh -v <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>:/docs squidfunk/mkdocs-material gh-deploy
+</code></pre></div>
                 
               
               
@@ -392,7 +599,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../devise%E9%96%A2%E9%80%A3/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../docker_rails_nuxt_mysql/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -401,19 +608,19 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Devise
+                Docker + Rails-api + Nuxt.js + Mysql
               </div>
             </div>
           </a>
         
         
-          <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../migration/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                開発環境と本番環境でのdb:resetとdb:migrate
+                マイグレーション
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -450,7 +657,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

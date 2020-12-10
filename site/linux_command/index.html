@@ -18,7 +18,7 @@
     
     
       
-        <title>docker の学習 - ポートフォリオ & アウトプット</title>
+        <title>便利コマンド - ポートフォリオ & アウトプット</title>
       
     
     
@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#linux" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -96,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              docker の学習
+              便利コマンド
             
           </span>
         </div>
@@ -141,6 +139,60 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../docker_rails_postgres/" class="md-tabs__link">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +222,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -179,10 +231,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     <label class="md-nav__link" for="nav-2">
       技術メモ
       <span class="md-nav__icon md-icon"></span>
@@ -239,6 +293,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -272,11 +338,59 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        便利コマンド
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       便利コマンド
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heloku-cli" class="md-nav__link">
+    heloku-cli
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -348,8 +462,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -358,29 +470,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    基本コマンド
+  <a href="#linux" class="md-nav__link">
+    Linux
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#docker-error-response-from-daemon-conflict" class="md-nav__link">
-    【同じ名前のコンテナがすでに起動していた】docker: Error response from daemon: Conflict.
+  <a href="#git" class="md-nav__link">
+    Git
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    コンテナのシェルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    自動ビルドできない
+  <a href="#heloku-cli" class="md-nav__link">
+    heloku-cli
   </a>
   
 </li>
@@ -398,42 +503,31 @@
               
                 
                 
-                <h1 id="docker">docker の学習<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h1>
-<h2 id="_1">基本コマンド<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>docker ps</code> : 現在**起動中**のコンテナの確認</li>
-<li><code>docker ps -a</code> : 現存するコンテナの確認</li>
-<li><code>docker pull</code> : docker hub からイメージを取得</li>
-<li><code>docker create</code> : 取得したイメージからコンテナを作成</li>
-<li><code>docker start</code> : 作成したコンテナの起動</li>
-<li><code>docker run</code> : 上記すべてを一括で行うことができる</li>
-<li><code>docker restart &lt;container ID&gt;</code> : コンテナの再起動</li>
-<li><code>docker stop &lt;container ID&gt;</code> : コンテナの停止 ※使わないコンテナは<code>rm</code>コマンドで削除</li>
-<li><code>docker rm &lt;container ID&gt;</code> : コンテナの削除</li>
-<li><code>docker rm -f &lt;container ID&gt;</code> : コンテナの強制削除</li>
-</ul>
-<h2 id="docker-error-response-from-daemon-conflict">【同じ名前のコンテナがすでに起動していた】docker: Error response from daemon: Conflict.<a class="headerlink" href="#docker-error-response-from-daemon-conflict" title="Permanent link">&para;</a></h2>
-<p>このエラーの解決ポイント</p>
-<ul>
-<li><del><code>docker ps -a</code>コマンドで起動中のコンテナの確認</del></li>
-<li><code>docker ps</code>コマンドで起動中のコンテナの確認</li>
-<li><code>docker rm &lt;continer ID&gt;</code>で起動中のコンテナの削除</li>
-<li><code>restart</code>が設定されている場合は、<code>docker rm -f &lt;container ID&gt;</code>で削除</li>
-<li><del>これだけだと起動できなかったので、Mac の docker アイコンからリスタートして、再起動で解決した</del></li>
-<li>ひとつ上の項目は、無くても今日は起動できた^^;</li>
-</ul>
-<h2 id="_2">コンテナのシェルへの接続<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>docker attach</code> : exit で抜けたらコンテナが停止するので、<code>Ctr+p+q</code> を同時押し</li>
-<li><code>docker exec</code> : exit で抜けても停止されないので基本こっち</li>
-</ul>
-<h2 id="_3">自動ビルドできない<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li>docker hub の該当リポジトリに入る</li>
-<li>Builds に入る</li>
-<li>configure automated builds ボタンを押下</li>
-<li>create and build ボタン押下で完了</li>
-</ol>
+                  <h1>便利コマンド</h1>
+                
+                <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>ファイルの強制削除 : rm -r
+
+ディレクトリの強制削除 : rm -rf
+</code></pre></div>
+
+<h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>変更履歴の確認 : git log
+
+直前のコミットをやり直す : git commit --amend
+
+追加変更したファイルを前回のコミットに含める : git commit --amend --no-edit
+
+pushできないとき : git push -f origin HEAD
+</code></pre></div>
+
+<h3 id="heloku-cli">heloku-cli<a class="headerlink" href="#heloku-cli" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>heroku token 取得 : heroku auth:token
+
+heroku account 取得 : heroku accounts
+
+heroku account 切り替え : heroku accounts:set AccountName
+</code></pre></div>
                 
               
               
@@ -448,6 +542,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../devise%E9%96%A2%E9%80%A3/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Devise
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                開発環境と本番環境でのdb:resetとdb:migrate
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -475,7 +604,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

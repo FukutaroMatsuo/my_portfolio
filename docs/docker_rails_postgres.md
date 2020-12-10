@@ -1,8 +1,6 @@
 アプリ作成時に毎回調べている気がするので、備忘録的にまとめてみました。
 下記の`app名`の箇所には適宜アプリ名を入力して下さい。
 
-※間違いがありましたら変更しますのでコメント頂けると嬉しいです^^
-
 ## 新規ディレクトリ作成 〜 hello world!!まで  
 
 まず、アプリの土台となるディレクトリを作ります。
@@ -19,22 +17,22 @@ code コマンドを使用して起動しています。
 
 Gemfileを編集します。
 
-```terminal
+```shell
 $ code Gemfile
-```
+```  
 
-```ruby:Gemfile
+```ruby
 source 'https://rubygems.org'
 gem 'rails', '~>5.2'
 ```
 
 Dockerfileを作成して編集します。
 
-```terminal
+```shell
 $ code Dockerfile
 ```
 
-```ruby:Dockerfile
+```Docker
 
 FROM ruby:2.5
 RUN apt-get update
@@ -54,11 +52,11 @@ RUN bundle install
 docker-compose.ymlファイルを作成して編集します。
 
 
-```terminal
+```shell
 $ code docker-compose.yml
 ```
 
-```ruby:docker-compose.yml
+```yaml
 version: "3"
 
 volumes:
@@ -92,14 +90,14 @@ services:
 
 コンテナの起動を行い、webコンテナに入って、rails new します。
 
-```terminal
+```shell
 $ docker-compose up --build -d
 $ docker-compose exec web bash
 $ rails new . --force --database=postgresql
 ```
 rails new で作成された database.yml ファイルに追記します。
 
-```ruby:database.yml
+```yaml
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -110,8 +108,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 ```
 
-```terminal
+Webコンテナの中で
+```shell
 $ rails db:migrate
 $ rails s -b 0.0.0.0
 ```
-Chromeの検索バーに、localhost:3000 と入力してアクセスするとhello worldが表示されているかと思います！
+Chromeの検索バーに、[localhost:3000](localhost:3000)と入力してアクセスするとhello worldが表示されているかと思います！

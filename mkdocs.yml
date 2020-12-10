@@ -5,13 +5,14 @@ copyright: Copyright &copy 2020 Fukutaro matsuo
 
 theme:
   name: material
+  features: navigation.tabs
   language: ja
   logo: img/icon.png
   favicon: img/icon.png
   icon:
     repo: fontawesome/brands/github
   palette:
-    scheme: preference
+    scheme: slate
     primary: indigo
     accent: amber
   font:
@@ -20,43 +21,30 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
   - footnotes
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-  - pymdownx.tabbed
 
 extra:
   search:
     language: "jp"
 
 nav:
-  - 自己紹介ページ: index.md
+  - 自己紹介: index.md
   - 技術メモ:
       - 環境構築:
           - Docker + Rails + Postgres: docker_rails_postgres.md
           - Docker + Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
+          - MkDocs(Docker + docker-compose): mkdocs.md
       - マイグレーション: migration.md
       - Devise: devise関連.md
-      - 便利コマンド: convenient_command.md
+      - 便利コマンド: linux_command.md
   - エラー解決:
       - 開発環境と本番環境でのdb:resetとdb:migrate: 開発環境と本番環境でのdb:resetとdb:migrate.md
       - docker-compose + MySQL でのパスワード入力時のエラー: docker-compose+mysqlでのパスワード入力時のエラー.md

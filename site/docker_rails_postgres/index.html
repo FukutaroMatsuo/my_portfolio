@@ -56,9 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
-      
-        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber">
       
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -141,6 +139,62 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+    
+    <a href=".." class="md-tabs__link">
+      自己紹介
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+      
+        
+      
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        技術メモ
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+      
+      <a href="../%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A8%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEdb%3Areset%E3%81%A8db%3Amigrate/" class="md-tabs__link">
+        エラー解決
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,7 +224,7 @@
 
   <li class="md-nav__item">
     <a href=".." class="md-nav__link">
-      自己紹介ページ
+      自己紹介
     </a>
   </li>
 
@@ -277,6 +331,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" class="md-nav__link">
+      MkDocs(Docker + docker-compose)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -312,7 +378,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../convenient_command/" class="md-nav__link">
+    <a href="../linux_command/" class="md-nav__link">
       便利コマンド
     </a>
   </li>
@@ -417,95 +483,101 @@
                 
                 <p>アプリ作成時に毎回調べている気がするので、備忘録的にまとめてみました。
 下記の<code>app名</code>の箇所には適宜アプリ名を入力して下さい。</p>
-<p>※間違いがありましたら変更しますのでコメント頂けると嬉しいです^^</p>
 <h2 id="hello-world">新規ディレクトリ作成 〜 hello world!!まで<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h2>
 <p>まず、アプリの土台となるディレクトリを作ります。
 さらに、touchコマンドで、2つの空ファイルを作成します。</p>
-<div class="highlight"><pre><span></span><code>$ mkdir app名 &amp;&amp; cd app名
+<div class="codehilite"><pre><span></span><code>$ mkdir app名 &amp;&amp; cd app名
 $ touch Gemfile Gemfile.lock
 </code></pre></div>
+
 <p>私は、VScodeを使用して開発しているので
 code コマンドを使用して起動しています。
 ちなみに、code コマンドは起動と作成をしてくれます。</p>
 <p>Gemfileを編集します。</p>
-<div class="highlight"><pre><span></span><code>$ code Gemfile
+<div class="codehilite"><pre><span></span><code>$ code Gemfile
 </code></pre></div>
-<p>```ruby:Gemfile
-source '<a href="https://rubygems.org">https://rubygems.org</a>'
-gem 'rails', '~&gt;5.2'
-<div class="highlight"><pre><span></span><code>Dockerfileを作成して編集します。
 
-```terminal
-$ code Dockerfile
-</code></pre></div></p>
-<p>```ruby:Dockerfile</p>
-<p>FROM ruby:2.5
-RUN apt-get update
-RUN apt-get install -y  
-    build-essential \
-    libpq-dev \
-    nodejs \
-    postgresql-client \
-    yarn \
-    vim</p>
-<p>WORKDIR /app名
-COPY Gemfile Gemfile.lock /app名/
-RUN bundle install
-<div class="highlight"><pre><span></span><code>docker-compose.ymlファイルを作成して編集します。
-
-
-```terminal
-$ code docker-compose.yml
-</code></pre></div></p>
-<p>```ruby:docker-compose.yml
-version: "3"</p>
-<p>volumes:
-  db-data:</p>
-<p>services:
-  web:
-    build: .
-    ports:
-      - "3000:3000"
-    volumes:
-      - ".:/app名"
-    environment:
-      - "DATABASE_PASSWORD=postgres"
-    tty: true
-    stdin_open: true
-    depends_on:
-      - db
-    links:
-      - db</p>
-<p>db:
-    image: postgres
-    volumes:
-      - "db-data:/var/lib/postgresql/data"
-    environment:
-      - "POSTGRES_HOST_AUTH_METHOD=trust"
-      - "POSTGRES_USER=postgres"
-      - "POSTGRES_PASSWORD=postgres"
-<div class="highlight"><pre><span></span><code>コンテナの起動を行い、webコンテナに入って、rails new します。
-
-```terminal
-$ docker-compose up --build -d
-$ docker-compose exec web bash
-$ rails new . --force --database=postgresql
+<div class="codehilite"><pre><span></span><code><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
+<span class="n">gem</span> <span class="s1">&#39;rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt;5.2&#39;</span>
 </code></pre></div>
-rails new で作成された database.yml ファイルに追記します。</p>
-<p>```ruby:database.yml
-default: &amp;default
-  adapter: postgresql
-  encoding: unicode
-  host: db  #追記
-  user: postgres  #追記
-  port: 5432  #追記
-  password: &lt;%= ENV.fetch("DATABASE_PASSWORD") %&gt;  #追記
-  pool: &lt;%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %&gt;
-<div class="highlight"><pre><span></span><code>```terminal
-$ rails db:migrate
-$ rails s -b 0.0.0.0
+
+<p>Dockerfileを作成して編集します。</p>
+<div class="codehilite"><pre><span></span><code>$ code Dockerfile
 </code></pre></div>
-Chromeの検索バーに、localhost:3000 と入力してアクセスするとhello worldが表示されているかと思います！</p>
+
+<div class="codehilite"><pre><span></span><code><span class="k">FROM</span> <span class="s">ruby:2.5</span>
+<span class="k">RUN</span> apt-get update
+<span class="k">RUN</span> apt-get install -y <span class="se">\ </span>
+    build-essential <span class="se">\</span>
+    libpq-dev <span class="se">\</span>
+    nodejs <span class="se">\</span>
+    postgresql-client <span class="se">\</span>
+    yarn <span class="se">\</span>
+    vim
+
+<span class="k">WORKDIR</span><span class="s"> /app名</span>
+<span class="k">COPY</span> Gemfile Gemfile.lock /app名/
+<span class="k">RUN</span> bundle install
+</code></pre></div>
+
+<p>docker-compose.ymlファイルを作成して編集します。</p>
+<div class="codehilite"><pre><span></span><code>$ code docker-compose.yml
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&quot;3&quot;</span>
+
+<span class="nt">volumes</span><span class="p">:</span>
+  <span class="nt">db-data</span><span class="p">:</span>
+
+<span class="nt">services</span><span class="p">:</span>
+  <span class="nt">web</span><span class="p">:</span>
+    <span class="nt">build</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">.</span>
+    <span class="nt">ports</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;3000:3000&quot;</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;.:/app名&quot;</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;DATABASE_PASSWORD=postgres&quot;</span>
+    <span class="nt">tty</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">stdin_open</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">depends_on</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+    <span class="nt">links</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+
+  <span class="nt">db</span><span class="p">:</span>
+    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;db-data:/var/lib/postgresql/data&quot;</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_HOST_AUTH_METHOD=trust&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_USER=postgres&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_PASSWORD=postgres&quot;</span>
+</code></pre></div>
+
+<p>コンテナの起動を行い、webコンテナに入って、rails new します。</p>
+<div class="codehilite"><pre><span></span><code>$ docker-compose up --build -d
+$ docker-compose <span class="nb">exec</span> web bash
+$ rails new . --force --database<span class="o">=</span>postgresql
+</code></pre></div>
+
+<p>rails new で作成された database.yml ファイルに追記します。</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">default</span><span class="p">:</span> <span class="nl">&amp;default</span>
+  <span class="nt">adapter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgresql</span>
+  <span class="nt">encoding</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">unicode</span>
+  <span class="nt">host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">db</span>  <span class="c1">#追記</span>
+  <span class="nt">user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>  <span class="c1">#追記</span>
+  <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5432</span>  <span class="c1">#追記</span>
+  <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= ENV.fetch(&quot;DATABASE_PASSWORD&quot;) %&gt;</span>  <span class="c1">#追記</span>
+  <span class="nt">pool</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= ENV.fetch(&quot;RAILS_MAX_THREADS&quot;) { 5 } %&gt;</span>
+</code></pre></div>
+
+<p>Webコンテナの中で</p>
+<div class="codehilite"><pre><span></span><code>$ rails db:migrate
+$ rails s -b <span class="m">0</span>.0.0.0
+</code></pre></div>
+
+<p>Chromeの検索バーに、<a href="localhost:3000">localhost:3000</a>と入力してアクセスするとhello worldが表示されているかと思います！</p>
                 
               
               
@@ -533,7 +605,7 @@ Chromeの検索バーに、localhost:3000 と入力してアクセスするとhe
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                自己紹介ページ
+                自己紹介
               </div>
             </div>
           </a>
@@ -582,7 +654,7 @@ Chromeの検索バーに、localhost:3000 と入力してアクセスするとhe
       <script>
         app = initialize({
           base: "..",
-          features: [],
+          features: navigation.tabs,
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
