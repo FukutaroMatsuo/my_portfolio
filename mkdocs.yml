@@ -22,6 +22,7 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - codehilite:
       guess_lang: false
   - toc:
@@ -30,6 +31,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.mark
+  - pymdownx.caret
 
 extra:
   search:

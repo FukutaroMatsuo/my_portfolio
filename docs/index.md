@@ -9,7 +9,7 @@
 | **希望職種**   | :material-check: バックエンドエンジニア      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
-| **希望年収**   | :material-check: 350 万円 / 年 以上          |
+| **希望年収**   | :material-check: 330 万円 / 年 以上          |
 
 </br>
 ## :material-chevron-right-circle-outline: パーソナル情報
@@ -30,9 +30,9 @@
 
 その結果、本来のリハビリ業務に充てられる時間が増え、入社 2 年目の年には年間患者数が<span style="color: red; ">前年比+15%</span>を達成し、月間の患者数は<span style="color: red; ">過去 1 位</span>を記録することができました。
 
-自分が知らない分野のことでも、食わず嫌いせずに<span style="color: red; ">継続して学ぶ習慣</span>がこのとき身につきました。
+自分が知らない分野のことでも、<span style="color: red; ">まずは挑戦</span>して、<span style="color: red; ">継続して学ぶ習慣</span>がこのとき身につきました。
 
-また、この実績が認められ、外来リハビリ部門の<span style="color: red; ">顧客と収益の管理</span>を任されました。
+また、この実績が認められ、外来リハビリ部門の顧客と収益の管理を任されました。
 
 管理も Excel で行っていたのですが、
 
@@ -44,21 +44,30 @@
 
 使用した職員から、嬉しい言葉をいただくことも多く、日々フィードバックをいただき、改善を重ねる経験もできました。
 
-<span style="color: red; ">普通はやろうと思わないような取り組みをやり遂げて、状況が好転する時に最も喜びを感じます。</span>
+普通はやろうと思わないような取り組みをやり遂げて、状況が好転する時に最も喜びを感じます。
 
 またこの経験がきっかけで、エンジニアという仕事に就きたいと強く思うようになり、現在転職活動中です。
 
-- 2020 年 3 月 退職予定
+- 2021 年 3 月 退職予定
 - 現在転職活動中
 
 ## :material-chevron-right-circle-outline: 学習したプログラミングスキル
 
-- HTML
-- CSS
-- Ruby
-- Ruby on Rails
-- Docker
-- AWS
+- **HTML**
+- **CSS**
+- **Javascript**
+- **Ruby**  
+  条件分岐、繰り返し処理、配列、ハッシュ、オブジェクト指向
+- **Ruby on Rails**  
+  ActiveRecord(CRUD 処理）、ログイン機能、管理者画面機能、グラフ描画（chartkick）、インポート処理（CSV 出力）、テストコード実装
+- **Git GitHub**  
+  基本コマンド（add、commit、push）、疑似チーム開発（checkout、merge、プルリクエスト）
+- **Docker**  
+  各種コマンド(build、up、down 等)、docker-compose（rails + postgres や python で作成されている mkdocs、 rails-api + nuxt.js + mysql）
+- **CercleCi TravisCi**  
+  自動テスト、自動 deploy
+- **AWS**  
+  VPC、RDS、ACM、Route53、ALB、ECS、ECR を使用したデプロイ経験
 
 ## :material-chevron-right-circle-outline: どのような業務をしたいか
 
@@ -67,12 +76,21 @@
 
 ## :material-chevron-right-circle-outline: どのようなエンジニアになりたいか
 
-「自分にしかできない価値を」
+<span style="color: red; ">「課題を見つけ、解決する能力を身につけ、多くの人の役に立てる」</span>エンジニアになりたいと考えています。
 
-## :material-chevron-right-circle-outline: 個人サービス
+#### ^^課題を見つける^^
 
-### サービス概要
+現職でも、問題となっている箇所や、当たり前とされている箇所に常に改善できる余地はないかと考えて仕事をしていました。
+言われたことをただやるのでは無く、常に考え続けて業務にあたる姿勢を忘れないようにしたいです。
 
--
+#### ^^解決する能力を身につける^^
 
-## :material-chevron-right-circle-outline: SNS アカウント
+課題を見つけて終わりではなく、それを解決する技術を身につけたいです。
+自分が実装したことがない技術も、まずは挑戦して、実装できるまで諦めないというマインドを持って学習してきました。
+また、習得した技術はアウトプットして、周囲に提供していきたいと考えております。
+
+#### ^^多くの人の役に立つ^^
+
+関わったプロダクトを通して、一人でも多くの人の課題を解決し、少しでも役に立つことができるようなエンジニアになりたいです。
+現職で運用している管理アプリでも、職員の作業を軽減することで、感謝されることがありました。
+その経験がエンジニアを志望するきっかけになったので、より多くの人の役に立つことができるようなエンジニアになりたいです。
