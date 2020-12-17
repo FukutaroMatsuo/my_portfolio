@@ -44,6 +44,10 @@
     
     
     
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
     
       
     
@@ -390,35 +394,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#device_2" class="md-nav__link">
-    deviceの日本語化
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#view_1" class="md-nav__link">
-    viewのカスタマイズ
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#admin_1" class="md-nav__link">
-    admin画面の表示
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    管理者ページの日本語化
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
     新規登録を不可にする
   </a>
   
@@ -554,35 +530,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#device_2" class="md-nav__link">
-    deviceの日本語化
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#view_1" class="md-nav__link">
-    viewのカスタマイズ
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#admin_1" class="md-nav__link">
-    admin画面の表示
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    管理者ページの日本語化
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
     新規登録を不可にする
   </a>
   
@@ -734,127 +682,9 @@
 <h2 id="_1">管理者ページの日本語化<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>config/locales/rails_admin.ja.ymlを新規作成</li>
-<li>https://gist.github.com/mshibuya/1662352 をコピーして貼り付け</li>
-<li><code>rails g devise:install</code>で、関連ファイルをインストール</li>
-<li>rootページの設定</li>
-<li>application.html.erbに、下記の記述(後で別の表示に変更予定) </li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nb">p</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;notice&quot;</span><span class="o">&gt;&lt;</span><span class="sx">%= notice %&gt;&lt;/p&gt;</span>
-<span class="sx">  &lt;p class=</span><span class="s2">&quot;alert&quot;</span><span class="o">&gt;&lt;</span><span class="sx">%= alert %&gt;&lt;/p&gt;</span>
-<span class="sx">  &lt;%=</span> <span class="k">yield</span> <span class="sx">%&gt;</span>
-<span class="sx">&lt;/body&gt;</span>
-</code></pre></div>
-
-<ul>
-<li>deviceのviewを変更したいので、<code>rails g devise:views</code>を実行</li>
-<li>認証用モデルとmigtrationファイルを作成する<br />
-<code>rails g devise user</code>このとき、user以外でも可</li>
-<li><code>rails db:migrate</code></li>
-<li><code>/users/sign_in</code>にアクセスして表示の確認</li>
-</ul>
-<h2 id="device_2">deviceの日本語化<a class="headerlink" href="#device_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>config/application.rbを開いて、下記のように追加</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="k">module</span> <span class="nn">App</span>
-  <span class="k">class</span> <span class="nc">Application</span> <span class="o">&lt;</span> <span class="no">Rails</span><span class="o">::</span><span class="no">Application</span>
-    <span class="c1"># Initialize configuration defaults for originally generated Rails version.</span>
-    <span class="n">config</span><span class="o">.</span><span class="n">load_defaults</span> <span class="mi">5</span><span class="o">.</span><span class="mi">2</span>
-    <span class="n">config</span><span class="o">.</span><span class="n">i18n</span><span class="o">.</span><span class="n">default_locale</span> <span class="o">=</span> <span class="ss">:ja</span> <span class="err">＜（追加）</span>
-
-    <span class="c1"># Settings in config/environments/* take precedence over those specified here.</span>
-    <span class="c1"># Application configuration can go into files in config/initializers</span>
-    <span class="c1"># -- all .rb files in that directory are automatically loaded after loading</span>
-    <span class="c1"># the framework and any gems in your application.</span>
-  <span class="k">end</span>
-</code></pre></div>
-
-<ul>
-<li><code>rails g devise:views:locale ja</code>を実行して、完成</li>
-<li>config/locales/devise.views.ja.ymlを開いて、文字をいじることも可能</li>
-</ul>
-<h2 id="view_1">viewのカスタマイズ<a class="headerlink" href="#view_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>config/initializers/devise.rbを開いて、下記のように追記</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="n">config</span><span class="o">.</span><span class="n">scoped_views</span> <span class="o">=</span> <span class="kp">true</span>
-</code></pre></div>
-
-<ul>
-<li><code>rails g devise:views users</code>を実行すると、編集可能</li>
-<li>controllerを編集したい場合は、<code>rails g devise:controllers users</code>を実行すると可能</li>
-</ul>
-<h2 id="admin_1">admin画面の表示<a class="headerlink" href="#admin_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>rails g rails_admin:install</code>を実行し、Enter押下</li>
-<li>一応、/adminへアクセスして、動作の確認</li>
-<li>管理者権限の設定、<code>rails g cancan:ability</code>を実行しモデルを作成</li>
-<li>model/ability.rbを開いて、下記を追記(admin権限のあるuserのみ、ログインできて、全てのCRUDを行える)</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">try</span><span class="p">(</span><span class="ss">:admin?</span><span class="p">)</span>
-  <span class="n">can</span> <span class="ss">:access</span><span class="p">,</span> <span class="ss">:rails_admin</span>
-  <span class="n">can</span> <span class="ss">:manage</span><span class="p">,</span> <span class="ss">:all</span>
-<span class="k">end</span>
-</code></pre></div>
-
-<ul>
-<li>config/initializers/rails_admin.rbの、deviceとcancanのコメントアウトを外す</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="no">RailsAdmin</span><span class="o">.</span><span class="n">config</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-
-  <span class="c1">### Popular gems integration</span>
-
-  <span class="c1">## == Devise ==</span>
-  <span class="n">config</span><span class="o">.</span><span class="n">authenticate_with</span> <span class="k">do</span>
-    <span class="n">warden</span><span class="o">.</span><span class="n">authenticate!</span> <span class="ss">scope</span><span class="p">:</span> <span class="ss">:user</span>
-  <span class="k">end</span>
-  <span class="n">config</span><span class="o">.</span><span class="n">current_user_method</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:current_user</span><span class="p">)</span>
-
-  <span class="c1">## == Cancan ==</span>
-  <span class="n">config</span><span class="o">.</span><span class="n">authorize_with</span> <span class="ss">:cancan</span>
-
-  <span class="c1">## == Pundit ==</span>
-  <span class="c1"># config.authorize_with :pundit</span>
-
-  <span class="o">~</span><span class="p">(</span><span class="err">省略</span><span class="p">)</span><span class="o">~</span>
-
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre></div>
-
-<ul>
-<li><code>rails g migration add_column_to_users</code>を実行し、作成されたmigrationファイルを下記のように追記</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">AddColumnToUsers</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">1</span><span class="o">]</span>
-  <span class="k">def</span> <span class="nf">change</span>
-    <span class="n">add_column</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:admin</span><span class="p">,</span> <span class="ss">:boolean</span><span class="p">,</span> <span class="ss">default</span><span class="p">:</span> <span class="kp">false</span>
-    <span class="n">add_column</span> <span class="ss">:users</span><span class="p">,</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">:string</span> <span class="o">&lt;</span><span class="err">ここで</span><span class="n">nameを追加しても良い</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-</code></pre></div>
-
-<ul>
-<li><code>rails db:migrate</code></li>
-<li>一応、schema.rbを確認し、usersテーブルにadminがあるか確認</li>
-<li>ユーザの作成とadminの付与</li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="n">rails</span> <span class="n">c</span>
-
-<span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">email</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="ss">password</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="ss">admin</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span>
-
-<span class="n">user</span><span class="o">.</span><span class="n">save</span>
-</code></pre></div>
-
-<ul>
-<li>一応、ログイン/ログアウト時の動作の確認をしておく</li>
-</ul>
-<h2 id="_2">管理者ページの日本語化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>config/locales/rails_admin.ja.ymlを新規作成</li>
 <li>https://gist.github.com/mshibuya/1662352 をコピーして貼り付け  </li>
 </ul>
-<h2 id="_3">新規登録を不可にする<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_2">新規登録を不可にする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>user modelから、<code>registerable</code>の部分をコメントアウトする</p>
 <div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
   <span class="c1"># Include default devise modules. Others available are:</span>
@@ -931,6 +761,19 @@
         </a>
       </div>
       
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
     </div>
   </div>
 </footer>
