@@ -34,9 +34,16 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.caret
 
+extra_css:
+  - "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  - "css/custom.css"
+
 extra:
   search:
     language: "jp"
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
 
 nav:
   - 自己紹介: index.md

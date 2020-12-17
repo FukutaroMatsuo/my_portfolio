@@ -1,8 +1,25 @@
-<span style="color: red; ">
-  ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
-</span>
+<strong style="color: red; ">
+ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
+</strong>
 
-![Placeholder](img/myphoto.jpg){: align=left width=250 }
+![Placeholder](img/myphoto.jpg){: align=left width=314 }
+
+  <div class="tx-switch">
+    <button data-md-color-scheme="default"><a class="md-button" style="margin: 10px 30px">ライト</a></button>
+    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 10px 30px">ダーク</a></button>
+  </div>
+
+<script>
+  var buttons = document.querySelectorAll("button[data-md-color-scheme]")
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var attr = this.getAttribute("data-md-color-scheme")
+      document.body.setAttribute("data-md-color-scheme", attr)
+      var name = document.querySelector("#__code_0 code span:nth-child(7)")
+      name.textContent = attr
+    })
+  })
+</script>
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
@@ -12,12 +29,12 @@
 | **希望年収**   | :material-check: 330 万円 / 年 以上          |
 
 </br>
-## :material-chevron-right-circle-outline: パーソナル情報
+## パーソナル情報
 
 - 松尾 福太郎（まつお ふくたろう）
 - 1993 年 9 月 1 日 / 27 歳
 
-## :material-chevron-right-circle-outline: 経歴
+## 経歴
 
 - 2017 年 3 月 / 長崎リハビリテーション学院 卒業
 - 2017 年 4 月 / 長崎県内の病院 就職（理学療法士）
@@ -28,7 +45,7 @@
 
 当時の外来リハビリ部門の課題は、ほとんどの書類業務が手書きで行われていることでした。それに対し Excel を勉強して、書類業務の改善を提案しました。
 
-その結果、本来のリハビリ業務に充てられる時間が増え、入社 2 年目の年には年間患者数が<span style="color: red; ">前年比+15%</span>を達成し、月間の患者数は<span style="color: red; ">過去 1 位</span>を記録することができました。
+その結果、本来のリハビリ業務に充てられる時間が増え、入社 2 年目の年には年間患者数が<span style="color: red; ">前年比+15%</span>を達成し、月間の外来患者数は<span style="color: red; ">過去 1 位</span>を記録することができました。
 
 自分が知らない分野のことでも、<span style="color: red; ">まずは挑戦</span>して、<span style="color: red; ">継続して学ぶ習慣</span>がこのとき身につきました。
 
@@ -51,7 +68,7 @@
 - 2021 年 3 月 退職予定
 - 現在転職活動中
 
-## :material-chevron-right-circle-outline: 学習したプログラミングスキル
+## 学習したプログラミングスキル
 
 - **HTML**
 - **CSS**
@@ -69,28 +86,62 @@
 - **AWS**  
   VPC、RDS、ACM、Route53、ALB、ECS、ECR を使用したデプロイ経験
 
-## :material-chevron-right-circle-outline: どのような業務をしたいか
+## どのような業務をしたいか
 
 <span style="color: red; ">「こういうのが欲しかった」</span>と言われるような、<span style="color: red; ">画期的なアプリの開発</span>に携わりたいです。
 そのために必要なスキルを学ぶことができる環境で働きたいです！
 
-## :material-chevron-right-circle-outline: どのようなエンジニアになりたいか
+## どのようなエンジニアになりたいか
 
 <span style="color: red; ">「課題を見つけ、解決する能力を身につけ、多くの人の役に立てる」</span>エンジニアになりたいと考えています。
 
-#### ^^課題を見つける^^
+#### 課題を見つける
 
 現職でも、問題となっている箇所や、当たり前とされている箇所に常に改善できる余地はないかと考えて仕事をしていました。
 言われたことをただやるのでは無く、常に考え続けて業務にあたる姿勢を忘れないようにしたいです。
 
-#### ^^解決する能力を身につける^^
+#### 解決する能力を身につける
 
 課題を見つけて終わりではなく、それを解決する技術を身につけたいです。
 自分が実装したことがない技術も、まずは挑戦して、実装できるまで諦めないというマインドを持って学習してきました。
 また、習得した技術はアウトプットして、周囲に提供していきたいと考えております。
 
-#### ^^多くの人の役に立つ^^
+#### 多くの人の役に立つ
 
 関わったプロダクトを通して、一人でも多くの人の課題を解決し、少しでも役に立つことができるようなエンジニアになりたいです。
 現職で運用している管理アプリでも、職員の作業を軽減することで、感謝されることがありました。
 その経験がエンジニアを志望するきっかけになったので、より多くの人の役に立つことができるようなエンジニアになりたいです。
+
+## 自作アプリ
+
+### 職場の顧客 & 収益管理アプリ（Ruby on Rails）
+
+<span style="color: red; ">※ 名前、数字は全てサンプルです。個人情報を多く含むため運用ページの掲載は控えています。（サンプル ver デプロイ予定）</span>
+
+1. **収益ページサンプル**
+   ![Placeholder](img/home.png){: align=left }
+2. **患者情報ページサンプル**
+   ![Placeholder](img/patient.png){: align=left }
+
+#### 概要
+
+- リハビリの患者情報と収益情報を管理するアプリ
+- 主な入力欄は、当日患者名と新規患者名
+- 収益ページでは、当日患者情報をもとに各種数字を算出する
+- 患者ページでは、リハビリ離脱率を下げるための定期目標も管理
+
+#### こだわりポイント
+
+- materalize css を使用した、シンプルなデザイン
+- Chartkick.js を使用してのわかりやすいグラフ描画
+- 新規登録不可で、管理者が登録した場合のみログイン可能(二段階認証導入予定)
+- ActiveRecord メソッドや生の SQL を使って、収益等、あらゆる数字を算出
+- 日報一覧ページでは、当日の全患者情報を閲覧でき、CSV 形式で出力することができる
+
+**他にも細かい便利な機能や、毎日の集計に 5~10 分はかかるような時間短縮できる機能を取り入れています。**
+
+## SNS
+
+- :fontawesome-brands-twitter: - [Twitter](https://twitter.com/fukusan0901)
+- :fontawesome-brands-github: - [GitHub](https://github.com/FukutaroMatsuo)
+- :fontawesome-solid-search: - [Qiita](https://qiita.com/fukusan0901)
