@@ -41,20 +41,20 @@ extra_css:
 extra:
   search:
     language: "jp"
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
 
 nav:
   - 自己紹介: index.md
   - 技術メモ:
-      - 環境構築:
+      - Docker:
           - Docker + Rails + Postgres: docker_rails_postgres.md
           - Docker + Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
           - MkDocs(Docker + docker-compose): mkdocs.md
+      - Git/GitHub:
+          - GitHub からアプリをクローンして複製する（初期化: git_clone_and_git_init.md
       - マイグレーション: migration.md
       - Devise: devise関連.md
       - 便利コマンド: linux_command.md
   - エラー解決:
       - 開発環境と本番環境でのdb:resetとdb:migrate: 開発環境と本番環境でのdb:resetとdb:migrate.md
       - docker-compose + MySQL でのパスワード入力時のエラー: docker-compose+mysqlでのパスワード入力時のエラー.md
+      - credentials.ymlとmaster.keyの関係: rails_credentials_yml_and_master_key.md

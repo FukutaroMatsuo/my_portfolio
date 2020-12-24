@@ -18,7 +18,7 @@
     
     
       
-        <title>Docker + Rails + Postgres - ポートフォリオ & アウトプット</title>
+        <title>GitHub からアプリをクローンして複製する（初期化 - ポートフォリオ & アウトプット</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-world" class="md-skip">
+        <a href="#github" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +98,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Docker + Rails + Postgres
+              GitHub からアプリをクローンして複製する（初期化
             
           </span>
         </div>
@@ -171,9 +171,7 @@
     <li class="md-tabs__item">
       
       
-        
-      
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../docker_rails_postgres/" class="md-tabs__link">
         技術メモ
       </a>
     </li>
@@ -259,12 +257,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" >
     <label class="md-nav__link" for="nav-2-1">
       Docker
       <span class="md-nav__icon md-icon"></span>
@@ -281,45 +277,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Docker + Rails + Postgres
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../docker_rails_postgres/" class="md-nav__link">
       Docker + Rails + Postgres
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
-    新規ディレクトリ作成 〜 hello world!!まで
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -356,10 +318,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
     <label class="md-nav__link" for="nav-2-2">
       Git/GitHub
       <span class="md-nav__icon md-icon"></span>
@@ -376,11 +340,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../git_clone_and_git_init/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       GitHub からアプリをクローンして複製する（初期化
     </a>
+    
   </li>
 
         
@@ -505,21 +478,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
-    新規ディレクトリ作成 〜 hello world!!まで
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -532,105 +492,38 @@
               
                 
                 
-                  <h1>Docker + Rails + Postgres</h1>
-                
-                <p>アプリ作成時に毎回調べている気がするので、備忘録的にまとめてみました。
-下記の<code>app名</code>の箇所には適宜アプリ名を入力して下さい。</p>
-<h2 id="hello-world">新規ディレクトリ作成 〜 hello world!!まで<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h2>
-<p>まず、アプリの土台となるディレクトリを作ります。
-さらに、touchコマンドで、2つの空ファイルを作成します。</p>
-<div class="codehilite"><pre><span></span><code>$ mkdir app名 &amp;&amp; cd app名
-$ touch Gemfile Gemfile.lock
+                <h1 id="github">GitHub からアプリをクローンして複製する（初期化）<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
+<p>自作のアプリをポートフォリオとして転職活動を行っています。</p>
+<p>個人情報がふんだんに含まれていたため、そのあたりを一掃して、アプリの機能のみ維持した状態で公開用のアプリを再作成するための、<strong>複製</strong>と<strong>初期化</strong>手順です。</p>
+<h1 id="_1">流れ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>複製したいアプリを clone</li>
+<li>必要によっては、clone したディレクトリ名を変更（app_v2 としました）</li>
+<li>個人情報関連を編集（ここはコミット履歴に残したくない）</li>
+<li>ディレクトリの git の情報を削除</li>
+<li>新規のリモートリポジトリを作成</li>
+<li>初期化し、作成したリモートリポジトリにプッシュ</li>
+</ul>
+<p>という感じです。</p>
+<h1 id="_2">コマンド<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span><code><span class="c1"># GitHub上で複製したいアプリのclone する際のURLをコピー</span>
+git clone コピーしたURL
+
+<span class="c1"># ファイルを編集し、一旦.gitを削除</span>
+rm -rf .git
+
+<span class="c1"># リポジトリを作成し、新規作成時の指示に従う</span>
+<span class="c1"># 初期化し、再度pushまで</span>
+git init
+git add .
+git commit -m <span class="s1">&#39;コミットメッセージ&#39;</span>
+git branch -M main
+git remote add origin 作成したリモートリポジトリのURL
+git push origin HEAD
 </code></pre></div>
 
-<p>私は、VScodeを使用して開発しているので
-code コマンドを使用して起動しています。
-ちなみに、code コマンドは起動と作成をしてくれます。</p>
-<p>Gemfileを編集します。</p>
-<div class="codehilite"><pre><span></span><code>$ code Gemfile
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
-<span class="n">gem</span> <span class="s1">&#39;rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt;5.2&#39;</span>
-</code></pre></div>
-
-<p>Dockerfileを作成して編集します。</p>
-<div class="codehilite"><pre><span></span><code>$ code Dockerfile
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="k">FROM</span> <span class="s">ruby:2.5</span>
-<span class="k">RUN</span> apt-get update
-<span class="k">RUN</span> apt-get install -y <span class="se">\ </span>
-    build-essential <span class="se">\</span>
-    libpq-dev <span class="se">\</span>
-    nodejs <span class="se">\</span>
-    postgresql-client <span class="se">\</span>
-    yarn <span class="se">\</span>
-    vim
-
-<span class="k">WORKDIR</span><span class="s"> /app名</span>
-<span class="k">COPY</span> Gemfile Gemfile.lock /app名/
-<span class="k">RUN</span> bundle install
-</code></pre></div>
-
-<p>docker-compose.ymlファイルを作成して編集します。</p>
-<div class="codehilite"><pre><span></span><code>$ code docker-compose.yml
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&quot;3&quot;</span>
-
-<span class="nt">volumes</span><span class="p">:</span>
-  <span class="nt">db-data</span><span class="p">:</span>
-
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">web</span><span class="p">:</span>
-    <span class="nt">build</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">.</span>
-    <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;3000:3000&quot;</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;.:/app名&quot;</span>
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;DATABASE_PASSWORD=postgres&quot;</span>
-    <span class="nt">tty</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">stdin_open</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">depends_on</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
-    <span class="nt">links</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
-
-  <span class="nt">db</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;db-data:/var/lib/postgresql/data&quot;</span>
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_HOST_AUTH_METHOD=trust&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_USER=postgres&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;POSTGRES_PASSWORD=postgres&quot;</span>
-</code></pre></div>
-
-<p>コンテナの起動を行い、webコンテナに入って、rails new します。</p>
-<div class="codehilite"><pre><span></span><code>$ docker-compose up --build -d
-$ docker-compose <span class="nb">exec</span> web bash
-$ rails new . --force --database<span class="o">=</span>postgresql
-</code></pre></div>
-
-<p>rails new で作成された database.yml ファイルに追記します。</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">default</span><span class="p">:</span> <span class="nl">&amp;default</span>
-  <span class="nt">adapter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgresql</span>
-  <span class="nt">encoding</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">unicode</span>
-  <span class="nt">host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">db</span>  <span class="c1">#追記</span>
-  <span class="nt">user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>  <span class="c1">#追記</span>
-  <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5432</span>  <span class="c1">#追記</span>
-  <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= ENV.fetch(&quot;DATABASE_PASSWORD&quot;) %&gt;</span>  <span class="c1">#追記</span>
-  <span class="nt">pool</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= ENV.fetch(&quot;RAILS_MAX_THREADS&quot;) { 5 } %&gt;</span>
-</code></pre></div>
-
-<p>Webコンテナの中で</p>
-<div class="codehilite"><pre><span></span><code>$ rails db:migrate
-$ rails s -b <span class="m">0</span>.0.0.0
-</code></pre></div>
-
-<p>Chromeの検索バーに、<a href="localhost:3000">localhost:3000</a>と入力してアクセスするとhello worldが表示されているかと思います！</p>
+<p>完了。</p>
+<p>余談ですが、 <code>git push origin HEAD</code>とすると、現在のブランチ名で push してくれて便利！</p>
                 
               
               
@@ -649,7 +542,7 @@ $ rails s -b <span class="m">0</span>.0.0.0
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -658,19 +551,19 @@ $ rails s -b <span class="m">0</span>.0.0.0
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                自己紹介
+                MkDocs(Docker + docker-compose)
               </div>
             </div>
           </a>
         
         
-          <a href="../docker_rails_nuxt_mysql/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../migration/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Docker + Rails-api + Nuxt.js + Mysql
+                マイグレーション
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

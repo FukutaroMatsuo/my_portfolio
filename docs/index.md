@@ -26,9 +26,10 @@
 | **希望職種**   | :material-check: バックエンドエンジニア      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
-| **希望年収**   | :material-check: 330 万円 / 年 以上          |
+| **希望年収**   | :material-check: 340 万円 / 年 以上          |
 
 </br>
+
 ## パーソナル情報
 
 - 松尾 福太郎（まつお ふくたろう）
@@ -63,7 +64,7 @@
 
 普通はやろうと思わないような取り組みをやり遂げて、状況が好転する時に最も喜びを感じます。
 
-またこの経験がきっかけで、エンジニアという仕事に就きたいと強く思うようになり、現在転職活動中です。
+またこの経験がきっかけで、エンジニアという仕事に就きたいと強く思うようになり、<span style="color: red; ">現在転職活動中</span>です。
 
 - 2021 年 3 月 退職予定
 - 現在転職活動中
@@ -88,8 +89,9 @@
 
 ## どのような業務をしたいか
 
-<span style="color: red; ">「こういうのが欲しかった」</span>と言われるような、<span style="color: red; ">画期的なアプリの開発</span>に携わりたいです。
-そのために必要なスキルを学ぶことができる環境で働きたいです！
+- 常に新しいことに挑戦し、変化し続ける
+- 資格取得や学習を促すような文化がある
+- 使った人が感動するような画期的なアプリの開発に関わることができる
 
 ## どのようなエンジニアになりたいか
 
@@ -145,3 +147,4 @@
 - :fontawesome-brands-twitter: - [Twitter](https://twitter.com/fukusan0901)
 - :fontawesome-brands-github: - [GitHub](https://github.com/FukutaroMatsuo)
 - :fontawesome-solid-search: - [Qiita](https://qiita.com/fukusan0901)
+- :fontawesome-regular-address-card: - [Wantedly](https://www.wantedly.com/id/fukutaro_matsuo)
