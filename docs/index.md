@@ -85,7 +85,8 @@
 - **CercleCi TravisCi**  
   自動テスト、自動 deploy
 - **AWS**  
-  VPC、RDS、ACM、Route53、ALB、ECS、ECR を使用したデプロイ経験
+  VPC、RDS、ACM、Route53、ALB、ECS、ECR を使用した Web アプリのデプロイ経験  
+  Amplify を使用した、静的サイトのデプロイ経験
 
 ## どのような業務をしたいか
 
