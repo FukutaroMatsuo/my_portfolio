@@ -26,7 +26,6 @@
 | **希望職種**   | :material-check: バックエンドエンジニア      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
-| **希望年収**   | :material-check: 340 万円 / 年 以上          |
 
 </br>
 
