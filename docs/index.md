@@ -5,8 +5,8 @@
 ![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
   <div class="tx-switch">
-    <button data-md-color-scheme="default"><a class="md-button" style="margin: 10px 30px">ライト</a></button>
-    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 10px 30px">ダーク</a></button>
+    <button data-md-color-scheme="default"><a class="md-button" style="margin: 37px 30px">ライト</a></button>
+    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 37px 30px">ダーク</a></button>
   </div>
 
 <script>
@@ -118,7 +118,9 @@
 
 ### 職場の顧客 & 収益管理アプリ（Ruby on Rails）
 
-<span style="color: red; ">※ 名前、数字は全てサンプルです。個人情報を多く含むため運用ページの掲載は控えています。（サンプル ver デプロイ予定）</span>
+**URL: [https://www.rehakanri.tk](https://www.rehakanri.tk)**
+
+<span style="color: red; ">※ 名前、数字は全てサンプルです。現在ログイン制限をしているため、[Twitter](https://twitter.com/fukusan0901)に DM 頂けると、ID、PassWord を教えることが可能です。</span>
 
 1. **収益ページサンプル**
    ![Placeholder](img/home.png){: align=left }
@@ -134,7 +136,7 @@
 
 #### こだわりポイント
 
-- materalize css を使用した、シンプルなデザイン
+- materalize css を使用した、レスポンシブ対応のシンプルなデザイン
 - Chartkick.js を使用してのわかりやすいグラフ描画
 - 新規登録不可で、管理者が登録した場合のみログイン可能(二段階認証導入予定)
 - ActiveRecord メソッドや生の SQL を使って、収益等、あらゆる数字を算出
