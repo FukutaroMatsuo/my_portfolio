@@ -1,11 +1,13 @@
-site_name: ポートフォリオ & アウトプット
-site_description: ポートフォリオ & アウトプット
+site_name: ポートフォリオ | アウトプット
+site_description: ポートフォリオ | アウトプット
 site_author: Fukutaro matsuo
 copyright: Copyright &copy 2020 Fukutaro matsuo
 
 theme:
   name: material
-  features: navigation.tabs
+  features:
+    - navigation.tabs
+    - navigation.expend
   language: ja
   logo: img/icon.png
   favicon: img/icon.png
@@ -43,18 +45,22 @@ extra:
     language: "jp"
 
 nav:
-  - 自己紹介: index.md
-  - 技術メモ:
-      - Docker:
-          - Docker + Rails + Postgres: docker_rails_postgres.md
-          - Docker + Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
-          - MkDocs(Docker + docker-compose): mkdocs.md
-      - Git/GitHub:
-          - GitHub からアプリをクローンして複製する（初期化: git_clone_and_git_init.md
-      - マイグレーション: migration.md
-      - Devise: devise関連.md
+  - About: index.md
+  - Tech:
+      - 概要: tech.md
       - 便利コマンド: linux_command.md
-  - エラー解決:
+      - Docker:
+          - Rails + Postgres: docker_rails_postgres.md
+          - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
+          - MkDocs(docker-compose): mkdocs.md
+      - Git/GitHub:
+          - 疑似チーム開発フロー: git_team_development.md
+          - アプリの複製と初期化: git_clone_and_git_init.md
+      - Ruby on Rails:
+          - マイグレーション: migration.md
+          - Devise: devise関連.md
+  - Error:
+      - 概要: error.md
       - 開発環境と本番環境でのdb:resetとdb:migrate: 開発環境と本番環境でのdb:resetとdb:migrate.md
       - docker-compose + MySQL でのパスワード入力時のエラー: docker-compose+mysqlでのパスワード入力時のエラー.md
       - credentials.ymlとmaster.keyの関係: rails_credentials_yml_and_master_key.md
