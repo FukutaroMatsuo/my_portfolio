@@ -49,13 +49,13 @@ nav:
   - Tech:
       - 概要: tech.md
       - 便利コマンド: linux_command.md
+      - Git/GitHub:
+          - 疑似チーム開発フロー: git_team_development.md
+          - アプリの複製と初期化: git_clone_and_git_init.md
       - Docker:
           - Rails + Postgres: docker_rails_postgres.md
           - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
           - MkDocs(docker-compose): mkdocs.md
-      - Git/GitHub:
-          - 疑似チーム開発フロー: git_team_development.md
-          - アプリの複製と初期化: git_clone_and_git_init.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
