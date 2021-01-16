@@ -56,6 +56,8 @@ nav:
           - Rails + Postgres: docker_rails_postgres.md
           - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
           - MkDocs(docker-compose): mkdocs.md
+      - AWS:
+          - SAA学習: saa.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
