@@ -58,6 +58,8 @@ nav:
           - MkDocs(docker-compose): mkdocs.md
       - AWS:
           - SAA学習: saa.md
+          - VPC: vpc.md
+          - EC2: ec2.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
