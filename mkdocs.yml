@@ -1,5 +1,5 @@
-site_name: ポートフォリオ | アウトプット
-site_description: ポートフォリオ | アウトプット
+site_name: ポートフォリオ & アウトプット
+site_description: プログラミング関連のアウトプット
 site_author: Fukutaro matsuo
 copyright: Copyright &copy 2020 Fukutaro matsuo
 
@@ -57,7 +57,8 @@ nav:
           - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
           - MkDocs(docker-compose): mkdocs.md
       - AWS:
-          - SAA学習: saa.md
+          - SAA試験概要: saa.md
+          - ネットワーク基礎: network.md
           - VPC: vpc.md
           - EC2: ec2.md
       - Ruby on Rails:
