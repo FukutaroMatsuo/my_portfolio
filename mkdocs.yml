@@ -44,6 +44,10 @@ extra:
   search:
     language: "jp"
 
+google_analytics:
+  - "UA-165840169-2"
+  - "auto"
+
 nav:
   - About: index.md
   - Tech:
@@ -61,6 +65,7 @@ nav:
           - ネットワーク基礎: network.md
           - VPC: vpc.md
           - EC2: ec2.md
+          - IAM: iam.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
