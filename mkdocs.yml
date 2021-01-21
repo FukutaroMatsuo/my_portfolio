@@ -66,6 +66,7 @@ nav:
           - VPC: vpc.md
           - EC2: ec2.md
           - IAM: iam.md
+          - RDS: rds.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
