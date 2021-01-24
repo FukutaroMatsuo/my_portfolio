@@ -70,6 +70,7 @@ nav:
           - ELB: elb.md
           - CloudWatch: cloudwatch.md
           - AutoScaling: autoscaling.md
+          - S3: s3.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
