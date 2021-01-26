@@ -72,6 +72,7 @@ nav:
           - AutoScaling: autoscaling.md
           - S3: s3.md
           - CloudFront: cloudfront.md
+          - CloudFormation: cloudformation.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
