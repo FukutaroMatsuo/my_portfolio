@@ -74,6 +74,7 @@ nav:
           - CloudFront: cloudfront.md
           - CloudFormation: cloudformation.md
           - データベース: database.md
+          - サーバレス: serverless.md
       - Ruby on Rails:
           - マイグレーション: migration.md
           - Devise: devise関連.md
