@@ -68,11 +68,15 @@
 - 2021 年 3 月 退職予定
 - 現在転職活動中
 
+<u>詳しくは**[Wantedly](https://www.wantedly.com/id/fukutaro_matsuo)**に記載していますので、そちらも読んで頂けると幸いです。</u>
+
 ## 学習したプログラミングスキル
 
 - **HTML**
 - **CSS**
 - **Javascript**
+- **Vue**  
+  バックエンドにRails-apiを用いた、デモアプリの作成
 - **Ruby**  
   条件分岐、繰り返し処理、配列、ハッシュ、オブジェクト指向
 - **Ruby on Rails**  
@@ -84,8 +88,8 @@
 - **CercleCi TravisCi**  
   自動テスト、自動 deploy
 - **AWS**  
-  VPC、RDS、ACM、Route53、ALB、ECS、ECR を使用した Web アプリのデプロイ経験  
-  Amplify を使用した、静的サイトのデプロイ経験
+      - VPC、EC2(ECR+ECS)、RDS、ELB、ACM、Route53 を使用した Web アプリのデプロイ経験  
+      - Amplify を使用した、静的サイトの自動デプロイの経験
 
 ## どのような業務をしたいか
 
