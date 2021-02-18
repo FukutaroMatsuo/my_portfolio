@@ -5,8 +5,8 @@
 ![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
   <div class="tx-switch">
-    <button data-md-color-scheme="default"><a class="md-button" style="margin: 37px 30px">ライト</a></button>
-    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 37px 30px">ダーク</a></button>
+    <button data-md-color-scheme="default"><a class="md-button" style="margin: 3px 23px">ライト</a></button>
+    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 3px 23px">ダーク</a></button>
   </div>
 
 <script>
@@ -24,10 +24,9 @@
 |                |                                              |
 | -------------- | -------------------------------------------- |
 | **希望職種**   | :material-check: バックエンドエンジニア      |
+| **資格**   | :material-check: [AWS認定 SAA](https://www.youracclaim.com/badges/016070fc-6168-4625-8a8d-1bde0b908984/public_url)      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
-
-</br>
 
 ## パーソナル情報
 
@@ -90,6 +89,7 @@
 - **AWS**  
       - VPC、EC2(ECR+ECS)、RDS、ELB、ACM、Route53 を使用した Web アプリのデプロイ経験  
       - Amplify を使用した、静的サイトの自動デプロイの経験
+      - [AWS認定 ソリューションアーキテクトアソシエイト（SAA）を取得](https://www.youracclaim.com/badges/016070fc-6168-4625-8a8d-1bde0b908984/public_url)
 
 ## どのような業務をしたいか
 
