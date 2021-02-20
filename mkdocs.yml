@@ -8,7 +8,7 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
   language: ja
   logo: img/icon.png
   favicon: img/icon.png
