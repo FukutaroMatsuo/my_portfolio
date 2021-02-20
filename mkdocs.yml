@@ -6,8 +6,9 @@ copyright: Copyright &copy 2020 Fukutaro matsuo
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.expend
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
   language: ja
   logo: img/icon.png
   favicon: img/icon.png
@@ -49,36 +50,34 @@ google_analytics:
   - "auto"
 
 nav:
-  - About: index.md
-  - Tech:
-      - 概要: tech.md
-      - 便利コマンド: linux_command.md
-      - Git/GitHub:
-          - 疑似チーム開発フロー: git_team_development.md
-          - アプリの複製と初期化: git_clone_and_git_init.md
-      - Docker:
-          - Rails + Postgres: docker_rails_postgres.md
-          - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
-          - MkDocs(docker-compose): mkdocs.md
-      - AWS:
-          - SAA試験概要: saa.md
-          - ネットワーク基礎: network.md
-          - VPC: vpc.md
-          - EC2: ec2.md
-          - IAM: iam.md
-          - RDS: rds.md
-          - ELB: elb.md
-          - CloudWatch: cloudwatch.md
-          - AutoScaling: autoscaling.md
-          - S3: s3.md
-          - CloudFront: cloudfront.md
-          - CloudFormation: cloudformation.md
-          - データベース: database.md
-          - サーバレス: serverless.md
-      - Ruby on Rails:
-          - マイグレーション: migration.md
-          - Devise: devise関連.md
-  - Error:
+  - 自己紹介: index.md
+  - 便利コマンド: linux_command.md
+  - Git/GitHub:
+      - 疑似チーム開発フロー: git_team_development.md
+      - アプリの複製と初期化: git_clone_and_git_init.md
+  - Docker:
+      - Rails + Postgres: docker_rails_postgres.md
+      - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
+      - MkDocs(docker-compose): mkdocs.md
+  - AWS:
+      - SAA試験概要: saa.md
+      - ネットワーク基礎: network.md
+      - VPC: vpc.md
+      - EC2: ec2.md
+      - IAM: iam.md
+      - RDS: rds.md
+      - ELB: elb.md
+      - CloudWatch: cloudwatch.md
+      - AutoScaling: autoscaling.md
+      - S3: s3.md
+      - CloudFront: cloudfront.md
+      - CloudFormation: cloudformation.md
+      - データベース: database.md
+      - サーバレス: serverless.md
+  - Ruby on Rails:
+      - マイグレーション: migration.md
+      - Devise: devise関連.md
+  - Error解決:
       - 概要: error.md
       - 開発環境と本番環境でのdb:resetとdb:migrate: 開発環境と本番環境でのdb:resetとdb:migrate.md
       - docker-compose + MySQL でのパスワード入力時のエラー: docker-compose+mysqlでのパスワード入力時のエラー.md
