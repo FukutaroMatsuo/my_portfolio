@@ -4,9 +4,9 @@
 
 - 実装したい機能を Issue に記載
 - 機能単位でブランチを切る
+- Push前にPullを行う
 - PullRequest
-- Merge
-- Pull
+- リモートリポでのMerge
 
 ```shell
 # ブランチを切って移動
@@ -30,12 +30,14 @@ git commit -m 'コミットメッセージ'
 # 誰かがリモートリポに変更を加えている可能性があるため、プッシュする前に必ずリモートリポのmainをPullする
 git pull origin main
 
-# プッシュ + リモートブランチの作成
-git push --set-upstream origin HEAD
+# 本来ならここでコンフリクトする可能性があるので、その場合は修正して再度 add & commit
+
+# プッシュ
+git push origin HEAD
 
 # GitHubのリモートリポのページにブランチが作成されているのでプルリクの作成
 
-# タイトルの記載、コメント部分に該当Issueを紐付ける記述
+# タイトルの記載、コメント部分に該当Issueを紐付ける記述も可能
 Closes #Issueの番号
 
 # Issueと紐付けてプルリクを作成する

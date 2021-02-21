@@ -51,6 +51,7 @@ nav:
   - 自己紹介: index.md
   - 便利コマンド: linux_command.md
   - Git/GitHub:
+      - Gitの基本フロー: git.md
       - 疑似チーム開発フロー: git_team_development.md
       - アプリの複製と初期化: git_clone_and_git_init.md
   - Docker:
