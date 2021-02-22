@@ -54,6 +54,7 @@ nav:
       - Gitの基本フロー: git.md
       - 疑似チーム開発フロー: git_team_development.md
       - アプリの複製と初期化: git_clone_and_git_init.md
+      - stashコマンドの使い方: git_stash.md
   - Docker:
       - Rails + Postgres: docker_rails_postgres.md
       - Rails-api + Nuxt.js + Mysql: docker_rails_nuxt_mysql.md
