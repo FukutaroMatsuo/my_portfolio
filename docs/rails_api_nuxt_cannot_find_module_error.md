@@ -13,7 +13,7 @@ Error: /app/.nuxt/client.js: Cannot find module '@babel/preset-env/lib/utils'
 npm uninstall @babel/preset-env
 
 # 少し古いバージョンをインストール
-npm uninstall @babel/preset-env@7.12.13
+npm install @babel/preset-env@7.12.13
 ```
 
 これで動作した。  
