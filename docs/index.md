@@ -5,8 +5,8 @@
 ![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
   <div class="tx-switch">
-    <button data-md-color-scheme="default"><a class="md-button" style="margin: 3px 23px">ライト</a></button>
-    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 3px 23px">ダーク</a></button>
+    <button data-md-color-scheme="default"><a class="md-button" style="margin: 3px 30px">ライト</a></button>
+    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 3px 30px">ダーク</a></button>
   </div>
 
 <script>
