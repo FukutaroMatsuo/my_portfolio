@@ -4,10 +4,10 @@
 
 ![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
-  <div class="tx-switch">
-    <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 20px">ライト</a></button>
-    <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 20px">ダーク</a></button>
-  </div>
+<div class="tx-switch">
+  <button data-md-color-scheme="default"><a class="md-button" style="margin: 10px 30px">ライト</a></button>
+  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 10px 30px">ダーク</a></button>
+</div>
 
 <script>
   var buttons = document.querySelectorAll("button[data-md-color-scheme]")
