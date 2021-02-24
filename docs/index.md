@@ -1,12 +1,6 @@
-<strong style="color: red; ">
-ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
-</strong>
-
-![Placeholder](img/myphoto.jpg){: align=left width=314 }
-
 <div class="tx-switch">
-  <button data-md-color-scheme="default"><a class="md-button" style="margin: 10px 30px">ライト</a></button>
-  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 10px 30px">ダーク</a></button>
+  <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 50px">ライト</a></button>
+  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 50px">ダーク</a></button>
 </div>
 
 <script>
@@ -21,7 +15,11 @@
   })
 </script>
 
-</br>
+<strong style="color: red; ">
+ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
+</strong>
+
+![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
@@ -29,6 +27,8 @@
 | **資格**   | :material-check: [AWS認定 SAA](https://www.youracclaim.com/badges/016070fc-6168-4625-8a8d-1bde0b908984/public_url)      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
+
+</br>
 
 ## パーソナル情報
 
