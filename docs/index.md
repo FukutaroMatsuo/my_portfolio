@@ -2,11 +2,11 @@
 ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
 </strong>
 
-![Placeholder](img/myphoto.jpg){: align=left width=314 }
+![Placeholder](img/myphoto.jpg){: align=left width=280px }
 
-<div class="tx-switch">
-  <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 0 0 20px">ライト</a></button>
-  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 0 0 20px">ダーク</a></button>
+<div class="top">
+  <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 20px">ライト</a></button>
+  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 30px">ダーク</a></button>
 </div>
 
 <script>
