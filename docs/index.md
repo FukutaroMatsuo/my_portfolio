@@ -21,16 +21,12 @@
   })
 </script>
 
-
 |                |                                              |
 | -------------- | -------------------------------------------- |
 | **希望職種**   | :material-check: バックエンドエンジニア      |
 | **資格**   | :material-check: [AWS認定 SAA](https://www.youracclaim.com/badges/016070fc-6168-4625-8a8d-1bde0b908984/public_url)      |
 | **学習中**     | :material-check: Ruby / Rails / AWS / Docker |
 | **希望勤務地** | :material-check: 福岡                        |
-
-</br>
-
 ## パーソナル情報
 
 - 松尾 福太郎（まつお ふくたろう）
