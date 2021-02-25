@@ -1,6 +1,12 @@
+<strong style="color: red; ">
+ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
+</strong>
+
+![Placeholder](img/myphoto2.jpg){: align=left }
+
 <div class="tx-switch">
-  <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 50px">ライト</a></button>
-  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 50px">ダーク</a></button>
+  <button data-md-color-scheme="default"><a class="md-button" style="margin: 0 20px">ライト</a></button>
+  <button data-md-color-scheme="slate"><a class="md-button md-button--primary" style="margin: 0 20px">ダーク</a></button>
 </div>
 
 <script>
@@ -15,11 +21,6 @@
   })
 </script>
 
-<strong style="color: red; ">
-ただいま転職活動中です！興味を持っていただけましたらご連絡ください！
-</strong>
-
-![Placeholder](img/myphoto.jpg){: align=left width=314 }
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
