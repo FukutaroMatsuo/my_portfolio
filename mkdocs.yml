@@ -82,4 +82,4 @@ nav:
       - 開発環境と本番環境でのdb:resetとdb:migrate: 開発環境と本番環境でのdb:resetとdb:migrate.md
       - docker-compose + MySQL でのパスワード入力時のエラー: docker-compose+mysqlでのパスワード入力時のエラー.md
       - credentials.ymlとmaster.keyの関係: rails_credentials_yml_and_master_key.md
-      - Rails-api+Nuxtでの初回起動時のエラー: rails_api_nuxt_cannot_find_module_error.md
+      - Rails-api+Nuxtでの初回起動時のエラー: rails_api_nuxt_error.md
